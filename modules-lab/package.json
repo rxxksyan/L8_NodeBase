@@ -1,0 +1,35 @@
+{
+  "name": "modules-lab",
+  "version": "1.0.0",
+  "description": "Node.js modules laboratory with nodemon, bcrypt and multiple environments",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config index.js dotenv_config_path=.env.development",
+    "build": "nodemon -r dotenv/config index.js dotenv_config_path=.env.production",
+    "deploy": "nodemon -r dotenv/config index.js dotenv_config_path=.env.domain",
+    "bcrypt": "node bcrypt-demo.js",
+    "mode": "node -r dotenv/config mode-demo.js dotenv_config_path=.env.development",
+    "mode-prod": "node -r dotenv/config mode-demo.js dotenv_config_path=.env.production",
+    "mode-domain": "node -r dotenv/config mode-demo.js dotenv_config_path=.env.domain",
+    "dev": "node -r dotenv/config index.js"
+  },
+  "keywords": [
+    "node",
+    "nodemon",
+    "bcrypt",
+    "dotenv",
+    "modules"
+  ],
+  "author": "Никита Сманцер",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

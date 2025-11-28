@@ -1,0 +1,23 @@
+{
+  "name": "custom-modules",
+  "version": "1.0.0",
+  "description": "Custom Node.js modules for sorting, data loading and file system",
+  "main": "use.js",
+  "type": "module",
+  "scripts": {
+    "start": "node use.js",
+    "test": "node test-modules.js"
+  },
+  "keywords": [
+    "node",
+    "modules",
+    "sorting",
+    "api",
+    "filesystem"
+  ],
+  "author": "Никита Сманцер",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

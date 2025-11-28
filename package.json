@@ -1,0 +1,37 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "Node.js project with environment variables, OS module and file system operations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -r dotenv/config index.js dotenv_config_path=.env.development",
+    "build": "nodemon -r dotenv/config index.js dotenv_config_path=.env.production",
+    "deploy": "nodemon -r dotenv/config index.js dotenv_config_path=.env.domain",
+    "bcrypt": "node bcrypt-demo.js",
+    "os": "node os/index.js",
+    "fs-sync": "node file-system/sync-demo.js",
+    "fs-async": "node file-system/async-demo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "dotenv",
+    "os",
+    "file-system",
+    "files",
+    "directories"
+  ],
+  "author": "Никита Сманцер",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "bcrypt": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
